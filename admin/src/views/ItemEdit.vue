@@ -51,10 +51,6 @@
         const res = await this.$http.get(`rest/items/${this.id}`)
         this.model = res.data
       },
-      async fetchParents() {
-        const res = await this.$http.get(`rest/items`)
-        this.parents = res.data
-      }
     },
      created() {
        this.id && this.fetch()
