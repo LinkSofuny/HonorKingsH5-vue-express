@@ -3,6 +3,7 @@
     <h1>CategoryList</h1>
       <el-table :data="items">
         <el-table-column prop="_id" label="ID" width="240"></el-table-column>
+        <el-table-column prop="parent.name" label="上级分类" ></el-table-column>
         <el-table-column prop="name" label="分类姓名" ></el-table-column>
         <el-table-column
         fixed="right"
@@ -26,7 +27,7 @@
     },
     methods: {
       async fetch() {
-        const res = await this.$http.get('categories')
+        const res = await this.$http.get('rest/categories')
         this.items = res.data
       },
       async remove(row) {
@@ -36,7 +37,7 @@
           type: 'warning'
         })
         .then(async () => {
-          await this.$http.delete(`categories/${row._id}`)
+          await this.$http.delete(`rest/categories/${row._id}`)
           this.$message.success('删除成功')
           this.fetch()
         }).catch( () => {
