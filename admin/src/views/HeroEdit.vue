@@ -207,7 +207,7 @@
     top: -15px;
     right: -15px;
   }
-  .el-icon-close:before {
+  .el-button-skills >>> .el-icon-close:before {
     position: relative;
     content: "\e6db";
     top: 8px;
