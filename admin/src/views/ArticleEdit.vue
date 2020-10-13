@@ -26,7 +26,7 @@
 
 <script>
   import { VueEditor } from "vue2-editor";
-  import {getChildrenCategories} from '../../methods/CommondMethods.js'
+  import {getChildrenCategories} from '../../methods/chooseChidrenList.js'
   export default {
     props: {
       id: {}

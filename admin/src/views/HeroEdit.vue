@@ -12,6 +12,7 @@
           <el-form-item label="头像">
             <el-upload
               class="avatar-uploader"
+              :headers="getAuthHeaders()"
               :action="$http.defaults.baseURL + '/upload'"
               :show-file-list="false"
               :on-success="afterUpload">
@@ -89,6 +90,7 @@
                   class="avatar-uploader"
                   :action="$http.defaults.baseURL + '/upload'"
                   :show-file-list="false"
+                  :headers="getAuthHeaders()"
                   :on-success= "res => $set(item, 'icon', res.url)">
                   <img v-if="item.icon" :src="item.icon" class="avatar">
                   <i v-else class="el-icon-plus avatar-uploader-icon"></i>
@@ -126,6 +128,7 @@
         model: {
           name: '',
           avatar: '',
+          skills: [],
           scores: {
             diffcult: 0
           },
