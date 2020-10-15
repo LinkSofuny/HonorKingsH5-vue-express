@@ -21,17 +21,17 @@
 
 ###### 1) 流程
 
-![1](C:\Users\LINK\Desktop\前端开发\node-vue-moba\README-Picture\1.png)
+![1](https://github.com/README-Picture/1.png)
 
 
 
-![2](C:\Users\LINK\Desktop\前端开发\node-vue-moba\README-Picture\2.png)
+![2](https://github.com/README-Picture/2.png)
 
 
 
-![3](C:\Users\LINK\Desktop\前端开发\node-vue-moba\README-Picture\3.png)
+![3](https://github.com/README-Picture/3.png)
 
-​		![4](C:\Users\LINK\Desktop\前端开发\node-vue-moba\README-Picture\4.png)
+​		![4](https://github.com/README-Picture/4.png)
 
 ###### 2) 模板定义:
 
@@ -49,7 +49,7 @@ const schema = new mongoose.Schema({
 
 ​	定义模板时,加入一个parent对象,即该分类的父级,通过ref到Category中去查找ObjectID(父类:爸爸),相当于给儿子添加了一个parent对象.
 
-![5](C:\Users\LINK\Desktop\前端开发\node-vue-moba\README-Picture\5.png)
+![5](https://github.com/README-Picture/5.png)
 
 ##### 二.  物品管理
 
@@ -61,13 +61,13 @@ const schema = new mongoose.Schema({
 
 ###### 	1) 英雄创建
 
-![Snipaste_2020-10-15_15-22-14](C:\Users\LINK\Desktop\前端开发\node-vue-moba\README-Picture\Snipaste_2020-10-15_15-22-14.png)
+![Snipaste_2020-10-15_15-22-14](https://github.com/README-Picture/Snipaste_2020-10-15_15-22-14.png)
 
-###### 	![Snipaste_2020-10-15_15-22-23](C:\Users\LINK\Desktop\前端开发\node-vue-moba\README-Picture\Snipaste_2020-10-15_15-22-23.png)
+###### 	![Snipaste_2020-10-15_15-22-23](https://github.com/README-Picture/Snipaste_2020-10-15_15-22-23.png)
 
 ###### 2) 英雄技能创建
 
-​	![Snipaste_2020-10-15_15-23-08](C:\Users\LINK\Desktop\前端开发\node-vue-moba\README-Picture\Snipaste_2020-10-15_15-23-08.png)
+​	![Snipaste_2020-10-15_15-23-08](https://github.com/README-Picture/Snipaste_2020-10-15_15-23-08.png)
 
 ###### 	3)  英雄列表
 
@@ -97,7 +97,7 @@ const schema = new mongoose.Schema({
   
 ```
 
-![Snipaste_2020-10-15_15-28-54](C:\Users\LINK\Desktop\前端开发\node-vue-moba\README-Picture\Snipaste_2020-10-15_15-28-54.png)
+![Snipaste_2020-10-15_15-28-54](https://github.com/README-Picture/Snipaste_2020-10-15_15-28-54.png)
 
 ###### 	
 
@@ -165,7 +165,7 @@ http.interceptors.request.use(function (config) {
 
 ​	4) 为所有的图片上传绑定Headers
 
-​	![Snipaste_2020-10-15_15-50-34](C:\Users\LINK\Desktop\前端开发\node-vue-moba\README-Picture\Snipaste_2020-10-15_15-50-34.png)
+​	![Snipaste_2020-10-15_15-50-34](https://github.com/README-Picture/Snipaste_2020-10-15_15-50-34.png)
 
 ​	入口文件定义getAuthHeaders
 
