@@ -4,7 +4,7 @@
       <el-table :data="items">
         <el-table-column prop="_id" label="ID" width="240"></el-table-column>
         <el-table-column prop="username" label="用户名" ></el-table-column>
-        <el-table-column prop="password" label="用户名" ></el-table-column>
+        <el-table-column prop="password" label="密码" ></el-table-column>
         <el-table-column
         fixed="right"
         label="操作"
