@@ -66,11 +66,9 @@
       },
       async fetchCategories() {
         const res = await this.$http.get(`rest/categories`)
-        const parentName = '文章'
-        getChildrenCategories(this.categories, res.data, parentName)
-       
-      },
+        getChildrenCategories(this.categories, res.data, '新闻分类')
 
+      }
     },
      created() {
        this.fetchCategories()

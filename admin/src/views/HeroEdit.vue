@@ -119,6 +119,7 @@
 </template>
 
 <script>
+  import {getChildrenCategories} from '../../methods/chooseChidrenList.js'
   export default {
     props: {
       id: {}
@@ -154,10 +155,12 @@
       async fetch() {
         const res = await this.$http.get(`rest/heroes/${this.id}`)
         this.model = Object.assign({}, this.model, res.data)
+
       },
       async fetchCategories() {
         const res = await this.$http.get(`rest/categories`)
-        this.categories = res.data
+        getChildrenCategories(this.categories, res.data, '英雄')
+
       },
       async fetchItems() {
         const res = await this.$http.get(`rest/items`)

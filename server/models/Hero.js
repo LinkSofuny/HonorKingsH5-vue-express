@@ -6,12 +6,12 @@ const schema = new mongoose.Schema({
   title: { type: String},
   categories: [{ type: mongoose.SchemaTypes.ObjectId, ref: 'Category'}],
 
-  scores: {
+  scores: [{
     diffcult: { type: Number },
     skills: { type: Number },
     attack: { type: Number },
     survive: { type: Number },
-  },
+  }],
   skills: [{
     icon: { type: String},
     name: { type: String},
@@ -31,4 +31,4 @@ const schema = new mongoose.Schema({
 })
 
 
-module.exports = mongoose.model('Hero', schema)
+module.exports = mongoose.model('Hero', schema, 'heroes')
