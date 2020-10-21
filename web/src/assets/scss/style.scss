@@ -1,3 +1,5 @@
+@import './variables';
+
 // reset
 * {
   box-sizing: border-box;
@@ -12,21 +14,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.2em;
   background: #f1f1f1;
+  -webkit-font-smoothing: antialiased;
 }
 a {
   color: #999999;
 }
 
-// colors
-$colors: (
-  "primary": #db9e3f,
-  "white": #fff,
-  "light": #f9f9f9,
-  "grey": #999,
-  "dark-1": #343440,
-  "dark": #222,
-  "black": #000,
-);
+
+// text
+.text-ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} 
+
+
 // color
 @each $colorKey, $color in $colors {
   .text-#{$colorKey} {
@@ -40,23 +43,23 @@ $colors: (
 // text-align
 @each $var in (left, center, right) {
   .text-#{$var} {
-    text-align: $var;
+    text-align: $var !important;
   }
 }
 
-// font size
-$base-font-size: 1rem;
-$font-sizes: (
-  xs: 0.7692,  // 10
-  sm: 0.9231,  // 12
-  md: 1,  // 13
-  lg: 1.0769,  // 14
-  xl: 1.2308,  // 16
-);
+
 @each $sizeKey, $size in $font-sizes {
   .fs-#{$sizeKey} {
-    font-size: $size * $base-font-size;
+    font-size: $size * $base-font-size !important;
   }
+}
+
+// width, height
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
 }
 
 // flex 
@@ -66,26 +69,18 @@ $font-sizes: (
 .flex-column {
   flex-direction: column;
 }
+.flex-warp {
+  flex-wrap: wrap;
+}
 
-$flex-jc:(
-  start: flex-start,
-  end: flex-end,
-  center: center,
-  between: space-between,
-  around: space-around,
-);
+
 @each $key, $value in $flex-jc {
   .jc-#{$key} {
     justify-content: $value;
   }
 }
 
-$flex-ai:(
-  start: flex-start,
-  end: flex-end,
-  center: center,
-  stretch: stretch,
-);
+
 @each $key, $value in $flex-ai {
   .ai-#{$key} {
     align-items: $value;
@@ -96,12 +91,6 @@ $flex-ai:(
   flex: 1;
 }
 
-// spacing
-// .mt-1
-$spacing-types: (m: margin, p: padding);
-$spancing-direction: (t: top, r: right, b:bottom, l: left);
-$spacing-base-size: 1rem;
-$spacing-sizes: ( 0: 0, 1: 0.25, 2: 0.5, 3: 1, 4: 1.5, 5: 3);
 
 
 // m-0, mx-0
@@ -109,7 +98,7 @@ $spacing-sizes: ( 0: 0, 1: 0.25, 2: 0.5, 3: 1, 4: 1.5, 5: 3);
 
   //.m-1
   @each $sizeKey, $size in $spacing-sizes {
-      #{$typeKey}-#{$sizeKey} {
+      .#{$typeKey}-#{$sizeKey} {
         #{$type}: $size * $spacing-base-size;
       } 
   }
@@ -120,7 +109,7 @@ $spacing-sizes: ( 0: 0, 1: 0.25, 2: 0.5, 3: 1, 4: 1.5, 5: 3);
       #{$type}-right: $size * $spacing-base-size;
     }
     // .my-1
-    .#{$typeKey}x-#{$sizeKey} {
+    .#{$typeKey}y-#{$sizeKey} {
       #{$type}-top: $size * $spacing-base-size;
       #{$type}-bottom: $size * $spacing-base-size;
     }
@@ -135,5 +124,37 @@ $spacing-sizes: ( 0: 0, 1: 0.25, 2: 0.5, 3: 1, 4: 1.5, 5: 3);
     }
    }
   }
- 
 }
+  // button 
+  .btn {
+    border: none;
+    border-radius: 0.1538;
+    font-size: map-get( $font-sizes, 'sm' ) * $base-font-size;
+    padding: 0.3rem 0.6rem;
+    -webkit-border-radius: 0.1538;
+    -moz-border-radius: 0.1538;
+    -ms-border-radius: 0.1538;
+    -o-border-radius: 0.1538;
+}
+  // nav 
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    .nav-item {
+      border-bottom: 3px solid transparent;
+      padding-bottom: 0.1rem;
+      &.active {
+        color: map-get($colors, 'primary' );
+        border-bottom: 3px solid map-get($colors, 'primary' );
+      }
+    }
+    &.nav-inverse {
+      .nav-item {
+        color: map-get($colors, 'white' );
+      &.active {
+        border-bottom-color: map-get($colors, 'white' );
+      }
+      }
+    }
+  }
+
