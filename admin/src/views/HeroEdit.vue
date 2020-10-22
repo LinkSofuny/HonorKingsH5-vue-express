@@ -159,7 +159,7 @@
       },
       async fetchCategories() {
         const res = await this.$http.get(`rest/categories`)
-        getChildrenCategories(this.categories, res.data, '英雄')
+        getChildrenCategories(this.categories, res.data, '英雄分类')
 
       },
       async fetchItems() {
