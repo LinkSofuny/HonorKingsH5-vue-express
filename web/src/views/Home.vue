@@ -30,12 +30,15 @@
     <!-- end of nav icons -->
     <m-list-card icon="cc-menu-circle" title="新闻资讯" :categories="newsCats">
       <template #items="{ category }">
-        <div class="py-2 fs-lg d-flex" v-for="(news, i) in category.newsList" :key="i">
+        <router-link
+         tag="div"
+         :to="`/articles/${news._id}`"
+         class="py-2 fs-lg d-flex" v-for="(news, i) in category.newsList" :key="i">
           <span class="note-category fs-xs mr-2"
           :class="noteCatColor(`${news.categoryName}`)">{{news.categoryName}}</span>
           <span class="flex-1 text-dark text-ellipsis pr-2">{{news.title}}</span>
           <span class="text-grey-1 fs-sm">{{news.createdAt | date}}</span>
-        </div>
+        </router-link>
       </template>
     </m-list-card>
 

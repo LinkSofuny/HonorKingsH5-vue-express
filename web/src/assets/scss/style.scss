@@ -19,6 +19,9 @@ body {
 a {
   color: #999999;
 }
+p {
+  line-height: 2rem;
+}
 
 
 // text
@@ -33,10 +36,10 @@ a {
 // color
 @each $colorKey, $color in $colors {
   .text-#{$colorKey} {
-    color: $color;
+    color: $color !important;
   }
   .bg-#{$colorKey} {
-    background-color: $color;
+    background-color: $color !important;
   }
 }
 
@@ -158,3 +161,9 @@ a {
     }
   }
 
+  // borders
+  @each $dir in (top, right, bottom, left) {
+    .border-#{$dir} {
+      border-#{$dir} : 1px solid $border-color;
+    }
+  }
