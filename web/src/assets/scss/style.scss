@@ -57,6 +57,12 @@ p {
   }
 }
 
+@each $fontKey,$size in $font-weight {
+  .fw-#{$fontKey} {
+    font-weight: $size;
+  }
+}
+
 // width, height
 .w-100 {
   width: 100%;
@@ -134,10 +140,21 @@ p {
     border-radius: 0.1538;
     font-size: map-get( $font-sizes, 'sm' ) * $base-font-size;
     padding: 0.3rem 0.6rem;
-    -webkit-border-radius: 0.1538;
-    -moz-border-radius: 0.1538;
-    -ms-border-radius: 0.1538;
-    -o-border-radius: 0.1538;
+    &.btn-lg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: map-get($colors, 'white-1');
+      border: 1px solid map-get($map: $colors, $key: 'white-2');
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 5px;
+        i {
+          color: map-get($map: $colors, $key: 'primary');
+          font-size: 1.5rem;
+          margin-right: 0.3846rem;
+        }
+    }
 }
   // nav 
   .nav {

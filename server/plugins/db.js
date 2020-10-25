@@ -5,6 +5,7 @@ module.exports = app => {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
+  mongoose.set('useFindAndModify', false)
 
   require('require-all')(__dirname + '/../models')
 

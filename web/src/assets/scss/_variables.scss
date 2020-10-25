@@ -2,9 +2,14 @@
 $colors: (
   "primary": #db9e3f,
   "orange": #f4be19,
+  "orange-1": #805300,
   "info": #4b67af,
   "blue": #4394e4,
+  "blue-1": #1f3695,
+  "danger":#791a16,
   "white": #fff,
+  "white-1": #fcfcfc,
+  "white-2": #eceef0,
   "light": #f9f9f9,
   "light-1": #d4d9de,
   "grey": #999,
@@ -12,8 +17,8 @@ $colors: (
   "dark-1": #343440,
   "dark": #222,
   "black": #000,
-);
 
+);
 $border-color: map-get($colors, "light-1");
 
 // font size
@@ -25,7 +30,13 @@ $font-sizes: (
   md: 1,  // 13
   lg: 1.0769,  // 14
   xl: 1.2308,  // 16
-  xxl: 1.3846,  // 18
+  xxl:1.3077, // 17
+  xxxl: 1.3846,  // 18
+);
+// font-weight
+$font-weight: (
+  l: 400,
+  xl: 800
 );
 
 $flex-jc:(
@@ -49,3 +60,4 @@ $spacing-types: (m: margin, p: padding);
 $spancing-direction: (t: top, r: right, b:bottom, l: left);
 $spacing-base-size: 1rem;
 $spacing-sizes: ( 0: 0, 1: 0.25, 2: 0.5, 3: 1, 4: 1.5, 5: 3);
+

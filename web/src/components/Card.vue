@@ -1,12 +1,12 @@
 <template>
   <div class="card bg-white mt-2 p-3">
-    <div class="card-header d-flex ai-center pb-3">
+    <div class=" d-flex ai-center " :class="{'border-bottom': !plain, 'pb-3': !plain}">
       <i class="iconfont" :class="`icon-${icon}`"></i>
-      <div class="fs-xl flex-1 px-2">{{title}}</div>
-      <div class="iconfont icon-menu"></div>
+      <div class="fs-xl flex-1 px-2" :class="{'fw-xl': plain}">{{title}}</div>
+      <div class="iconfont icon-menu" v-if="!plain"></div>
     </div>
     <div class="card-body pt-3">
-      <slot></slot>
+      <slot ></slot>
     </div>
   </div>
 </template>
@@ -16,7 +16,8 @@ export default {
  props: {
    title: { tyep: String, required: true },
    icon: { tyep: String, required: true },
- }
+   plain: { type: Boolean}
+ },
 }
 </script>
 

@@ -14,7 +14,7 @@
           <img v-if="model.icon" :src="model.icon" class="avatar">
           <i v-else class="el-icon-plus avatar-uploader-icon"></i>
         </el-upload>
-</el-form-item>
+      </el-form-item>
       <el-form-item>
         <el-button type= 'primary' native-type='submit'>保存</el-button>
       </el-form-item>
