@@ -1,19 +1,25 @@
-# node-vue-moba
+# HonorKingsH5-Vue-Express
+[![Learn-JavaScript](https://img.shields.io/badge/Vue-2.x-green)](https://www.baidu.com/link?url=kh-eEdMYEZMEEq24s6smGNV0Zw5CdDo1Lk6_qVkYqqu&ck=7244.1.82.202.158.202.158.10&shh=www.baidu.com&wd=&eqid=dee4011500022810000000066051c4e0) [![Learn-JavaScript](https://img.shields.io/badge/ElementUI-v2.15.1-Blue)](https://element.eleme.io/#/en-US) [![Learn-JavaScript](https://img.shields.io/badge/Express-v4.17.1-green)](https://www.expressjs.com.cn/)
+王者荣耀资讯网
 
-仿王者荣耀官方网站
+**目的**:
+
+练手项目, 为了能够理解前后端开发, 数据交互而实现
+
+### 项目效果图
+<img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dae09bfa9a61458cb0a3af4d7707cebc~tplv-k3u1fbpfcp-watermark.image" width="200px"/>
+<img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a9700d88fea64cd9ba1ece996dce12f6~tplv-k3u1fbpfcp-watermark.image" width="200px"/>
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8b7083ca6caa44c288bab141eb2b64de~tplv-k3u1fbpfcp-watermark.image" width="200px"/>
 
 
-## 管理后台
+### 网站效果
 
-### 基于Element UI 后台管理基础界面搭建
+### 后台
+## 后台管理系统
+
 
 #### 后台基本功能开发
 
-#### 通用CRUD接口
-
-具体代码:
-
-[https://juejin.im/post/6881871023180873742]()
 
 ##### 一.分类管理
 
@@ -25,21 +31,21 @@
 
 ##### 三.  英雄管理
 
- 	1) 英雄创建
+	1) 英雄创建
 
- 2) 英雄技能创建
+	2) 英雄技能创建
 
- 	3)  英雄列表
+	3)  英雄列表
 
 #####  四. 文章管理
 
- 	1) 文章分类 (如新闻)
+	1) 文章分类 (如新闻)
 
- 	2) 富文本编辑
+	2) 富文本编辑
 
-  3)  广告
+	3)  广告
 
-​	广告的CRUD
+	​4) 广告的CRUD
 
 ##### 五.  管理员用户管理
 
@@ -55,16 +61,23 @@
 
 ##### 七.  安全性优化
 
- 	1)  用户登录成功后赋予token
+	1)  用户登录成功后赋予token
 
- 	2)  vue路由守卫
+	2)  vue路由守卫
 
- 	3)  设置Authorization(Header)
+	3)  设置Authorization(Header)
 
-  4) 为所有的图片上传绑定Header
+	4) 为所有的图片上传绑定Header
 
-   5)  登录校验中间件
+	5)  登录校验中间件
+
+	6)  路有权限管理
 
 
-
-## web移动端
+## 欢迎关注:
+[掘金: 前端Link](https://juejin.cn/user/2005929448188567)  
+[CDSN: 前端Link](https://blog.csdn.net/m0_55382988?spm=1001.2101.3001.5343)
+## 微信公众号:
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/de68be4aa82e414195f43b21144f1f9d~tplv-k3u1fbpfcp-watermark.image)
+### License
+[MIT](www.baidu.com) © 2020 [Link]()
