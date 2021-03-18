@@ -7,9 +7,7 @@
 练手项目, 为了能够理解前后端开发, 数据交互而实现
 ### 网站效果
 ### 项目效果图
-<img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dae09bfa9a61458cb0a3af4d7707cebc~tplv-k3u1fbpfcp-watermark.image" width="200px" display="block-inline"/>
-<img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a9700d88fea64cd9ba1ece996dce12f6~tplv-k3u1fbpfcp-watermark.image" width="200px" display="block-inline"/>
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8b7083ca6caa44c288bab141eb2b64de~tplv-k3u1fbpfcp-watermark.image" width="200px" display="block-inline"/>
+<img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dae09bfa9a61458cb0a3af4d7707cebc~tplv-k3u1fbpfcp-watermark.image" width="200px" /><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a9700d88fea64cd9ba1ece996dce12f6~tplv-k3u1fbpfcp-watermark.image" width="200px" /><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8b7083ca6caa44c288bab141eb2b64de~tplv-k3u1fbpfcp-watermark.image" width="200px" />
 
 ### 后台
 ## 后台管理系统
