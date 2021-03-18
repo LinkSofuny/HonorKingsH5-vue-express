@@ -72,6 +72,6 @@
 ## 欢迎关注:
 [掘金: 前端Link](https://juejin.cn/user/2005929448188567)  
 ## 微信公众号:
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/de68be4aa82e414195f43b21144f1f9d~tplv-k3u1fbpfcp-watermark.image)
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/de68be4aa82e414195f43b21144f1f9d~tplv-k3u1fbpfcp-watermark.image" width="300px"/>
 ### License
 [MIT](www.baidu.com) © 2020 [Link]()
